@@ -11,17 +11,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>QT</title>
-    <url>/2020/08/01/QT/</url>
-    <content><![CDATA[<p>[TOC]</p>
-<h1 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h1><h2 id="QT-简介"><a href="#QT-简介" class="headerlink" title="QT 简介"></a>QT 简介</h2><p>Qt 是一个1991年由Qt Company开发的跨平台<a href="https://baike.so.com/doc/5372557-5608494.html" target="_blank" rel="noopener">C++</a>图形用户界面应用程序开发框架。它既可以开发<a href="https://baike.so.com/doc/2373261-2509363.html" target="_blank" rel="noopener">GUI</a>程序，也可用于开发非GUI程序，比如控制台工具和服务器。Qt是面向对象的框架，使用特殊的代码生成扩展(称为元对象编译器(Meta Object Compiler, moc))以及一些宏，Qt很容易扩展，并且允许真正地组件编程。2008年，Qt Company科技被<a href="https://baike.so.com/doc/1237745-1309111.html" target="_blank" rel="noopener">诺基亚</a>公司收购，Qt也因此成为诺基亚旗下的编程语言工具。2012年，Qt被Digia收购。2014年4月，跨平台集成开发环境Qt Creator 3.1.0正式发布，实现了对于<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>的完全支持，新增WinRT、Beautifier等插件，废弃了无Python接口的GDB调试支持，集成了基于Clang的C/C++代码模块，并对Android支持做出了调整，至此实现了全面支持<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>、<a href="https://baike.so.com/doc/456230-483111.html" target="_blank" rel="noopener">Android</a>、WP,它提供给应用程序开发者建立艺术级的图形用户界面所需的所有功能。基本上，Qt 同 <a href="https://baike.so.com/doc/26214724-27435879.html" target="_blank" rel="noopener">X Window</a> 上的 Motif，Openwin，GTK 等图形界面库和 Windows 平台上的 <a href="https://baike.so.com/doc/5375783-5611872.html" target="_blank" rel="noopener">MFC</a>，OWL，VCL，ATL 是同类型的东西。（以上来源于百度）</p>
-<h2 id="QT-安装"><a href="#QT-安装" class="headerlink" title="QT 安装"></a>QT 安装</h2><blockquote>
-<p>这里我用的是下载安装器安装的，大家可以到qt官网注册申请一个账号</p>
-</blockquote>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200802003515095.png" alt="image-20200802003515095"></p>
-<h2 id="第一个QT程序"><a href="#第一个QT程序" class="headerlink" title="第一个QT程序"></a>第一个QT程序</h2>]]></content>
-  </entry>
-  <entry>
     <title>数据结构</title>
     <url>/2020/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1>]]></content>
@@ -31,5 +20,16 @@
       <tags>
         <tag>数据结构</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>QT</title>
+    <url>/2020/08/01/QT/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h1 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h1><h2 id="QT-简介"><a href="#QT-简介" class="headerlink" title="QT 简介"></a>QT 简介</h2><p>Qt 是一个1991年由Qt Company开发的跨平台<a href="https://baike.so.com/doc/5372557-5608494.html" target="_blank" rel="noopener">C++</a>图形用户界面应用程序开发框架。它既可以开发<a href="https://baike.so.com/doc/2373261-2509363.html" target="_blank" rel="noopener">GUI</a>程序，也可用于开发非GUI程序，比如控制台工具和服务器。Qt是面向对象的框架，使用特殊的代码生成扩展(称为元对象编译器(Meta Object Compiler, moc))以及一些宏，Qt很容易扩展，并且允许真正地组件编程。2008年，Qt Company科技被<a href="https://baike.so.com/doc/1237745-1309111.html" target="_blank" rel="noopener">诺基亚</a>公司收购，Qt也因此成为诺基亚旗下的编程语言工具。2012年，Qt被Digia收购。2014年4月，跨平台集成开发环境Qt Creator 3.1.0正式发布，实现了对于<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>的完全支持，新增WinRT、Beautifier等插件，废弃了无Python接口的GDB调试支持，集成了基于Clang的C/C++代码模块，并对Android支持做出了调整，至此实现了全面支持<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>、<a href="https://baike.so.com/doc/456230-483111.html" target="_blank" rel="noopener">Android</a>、WP,它提供给应用程序开发者建立艺术级的图形用户界面所需的所有功能。基本上，Qt 同 <a href="https://baike.so.com/doc/26214724-27435879.html" target="_blank" rel="noopener">X Window</a> 上的 Motif，Openwin，GTK 等图形界面库和 Windows 平台上的 <a href="https://baike.so.com/doc/5375783-5611872.html" target="_blank" rel="noopener">MFC</a>，OWL，VCL，ATL 是同类型的东西。（以上来源于百度）</p>
+<h2 id="QT-安装"><a href="#QT-安装" class="headerlink" title="QT 安装"></a>QT 安装</h2><blockquote>
+<p>这里我用的是下载安装器安装的，大家可以到qt官网注册申请一个账号</p>
+</blockquote>
+<p><img src="src//image-20200802003515095.png" alt="image-20200802003515095"></p>
+<h2 id="第一个QT程序"><a href="#第一个QT程序" class="headerlink" title="第一个QT程序"></a>第一个QT程序</h2>]]></content>
   </entry>
 </search>
