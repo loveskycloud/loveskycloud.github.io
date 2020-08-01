@@ -42,70 +42,14 @@
 
 
 
-    
-        <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        
-            load: ['[tex]/mhchem'],
-        
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        
-            packages: {'[+]': ['mhchem']},
-        
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
           
 
 
     
     
     <title>
-          
-            天空没有错
+        
+            QT | 天空没有错
         
     </title>
     
@@ -276,11 +220,11 @@
 </aside>
   
   <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
     
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
+    
+      <div class="post-header"> 
   <a class="post-header-title" href="/2020/08/01/QT/">QT</a>
   <div class="post-header-meta">
     <span>
@@ -296,49 +240,11 @@
       分类于:&nbsp;
     </span>
     
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <p>[TOC]</p>
-<h1 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h1><h2 id="QT-简介"><a href="#QT-简介" class="headerlink" title="QT 简介"></a>QT 简介</h2><p>Qt 是一个1991年由Qt Company开发的跨平台<a href="https://baike.so.com/doc/5372557-5608494.html" target="_blank" rel="noopener">C++</a>图形用户界面应用程序开发框...
-          
-          </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2020/08/01/QT/">阅读更多</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2020/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      发布于:&nbsp;2020-07-26
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      更新于:&nbsp;2020-07-26
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;<a class="category-link" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
-    </span>
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
     
   </div>
 </div>   
@@ -346,77 +252,126 @@
 
 
 
-      
-      
-  <div class="post-tags">
     
-      <i class="iconfont icon-tag">
-        <a rel="tag" href = /tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/ >数据结构</a>
-      </i>
     
-  </div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1>
-          
-          </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2020/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">阅读更多</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/2020/07/21/C++/">C++</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      发布于:&nbsp;2020-07-21
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      更新于:&nbsp;2020-07-26
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      分类于:&nbsp;
-    </span>
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=QT&url=wangsheng.cf/2020/08/01/QT/&pic=wangsheng.cf/null&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=QT&url=wangsheng.cf/2020/08/01/QT/&via=王胜" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=wangsheng.cf/2020/08/01/QT/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=wangsheng.cf/2020/08/01/QT/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=wangsheng.cf/2020/08/01/QT/&title=QT" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=天空没有错&title=QT&summary=&pics=wangsheng.cf/null&url=wangsheng.cf/2020/08/01/QT/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=wangsheng.cf/2020/08/01/QT/&text=QT" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
     
   </div>
-</div>   
+  </header>
+  
+  
+  
+  
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <p>[TOC]</p>
+<h1 id="QT"><a href="#QT" class="headerlink" title="QT"></a>QT</h1><h2 id="QT-简介"><a href="#QT-简介" class="headerlink" title="QT 简介"></a>QT 简介</h2><p>Qt 是一个1991年由Qt Company开发的跨平台<a href="https://baike.so.com/doc/5372557-5608494.html" target="_blank" rel="noopener">C++</a>图形用户界面应用程序开发框架。它既可以开发<a href="https://baike.so.com/doc/2373261-2509363.html" target="_blank" rel="noopener">GUI</a>程序，也可用于开发非GUI程序，比如控制台工具和服务器。Qt是面向对象的框架，使用特殊的代码生成扩展(称为元对象编译器(Meta Object Compiler, moc))以及一些宏，Qt很容易扩展，并且允许真正地组件编程。2008年，Qt Company科技被<a href="https://baike.so.com/doc/1237745-1309111.html" target="_blank" rel="noopener">诺基亚</a>公司收购，Qt也因此成为诺基亚旗下的编程语言工具。2012年，Qt被Digia收购。2014年4月，跨平台集成开发环境Qt Creator 3.1.0正式发布，实现了对于<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>的完全支持，新增WinRT、Beautifier等插件，废弃了无Python接口的GDB调试支持，集成了基于Clang的C/C++代码模块，并对Android支持做出了调整，至此实现了全面支持<a href="https://baike.so.com/doc/5336466-5571905.html" target="_blank" rel="noopener">iOS</a>、<a href="https://baike.so.com/doc/456230-483111.html" target="_blank" rel="noopener">Android</a>、WP,它提供给应用程序开发者建立艺术级的图形用户界面所需的所有功能。基本上，Qt 同 <a href="https://baike.so.com/doc/26214724-27435879.html" target="_blank" rel="noopener">X Window</a> 上的 Motif，Openwin，GTK 等图形界面库和 Windows 平台上的 <a href="https://baike.so.com/doc/5375783-5611872.html" target="_blank" rel="noopener">MFC</a>，OWL，VCL，ATL 是同类型的东西。（以上来源于百度）</p>
+<h2 id="QT-安装"><a href="#QT-安装" class="headerlink" title="QT 安装"></a>QT 安装</h2><h2 id="第一个QT程序"><a href="#第一个QT程序" class="headerlink" title="第一个QT程序"></a>第一个QT程序</h2>
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
     
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2020/07/26/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+        <span>数据结构</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
 
 
 
-      
-      
-  <div class="tag-line-space"></div>
 
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: C++</span><br></pre></td></tr></table></figure>
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2020/08/01/QT/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#QT"><span class="toc-number">1.</span> <span class="toc-text">QT</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#QT-简介"><span class="toc-number">1.1.</span> <span class="toc-text">QT 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#QT-安装"><span class="toc-number">1.2.</span> <span class="toc-text">QT 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第一个QT程序"><span class="toc-number">1.3.</span> <span class="toc-text">第一个QT程序</span></a></li></ol></li></ol>
+      </li>
+    </ul>
+  </div>
 
-<p>[TOC]</p>
-<h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1><p>函数是...
-          
-          </div>
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
         
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/2020/07/21/C++/">阅读更多</a>
-        </div>
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
       </div>
-    </article>
-
-
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '1ddc43af2055dc4a8933',
+    clientSecret: '682e622ead1cd9d885e282d339f49717d004199d',
+    repo: 'comment',
+    owner: 'loveskycloud',
+    admin: ['loveskycloud'],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="MTAyMC81MTE0My8yNzYyNA==">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
 
   </main>
   <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
@@ -464,6 +419,12 @@
 
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
 
 
 
