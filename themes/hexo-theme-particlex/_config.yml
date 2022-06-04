@@ -5,7 +5,7 @@
 language: zh
 
 # avatar image url
-head_img:
+head_img: https://files.catbox.moe/xzo9i4.png
 
 # home page head info block
 head_block_enable: true
