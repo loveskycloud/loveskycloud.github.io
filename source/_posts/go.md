@@ -13,3 +13,10 @@ func main() {
     fmt.Println("Hello, World")
 }
 ```
+
+> Run this Program
+```
+go run hello.go
+# or go build hello.go
+# ./hello
+```
