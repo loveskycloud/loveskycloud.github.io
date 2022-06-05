@@ -37,9 +37,9 @@ hello world
 ```
 
 ## 伪对象
-> .PYTHON: objectname
+> .PHONY: objectname
 ```
-.PYTHON: main
+.PHONY: main
 all: main test
     gcc -o simple  main.o test.o 
 main:
@@ -48,4 +48,42 @@ test:
     gcc -o test.o -c test.c
 clean:
     rm test.o main.o simple
+```
+
+## 变量
+
+```
+.PHONY: clean main
+RM = rm
+CC = gcc
+OBJS = main.o foo.o
+EXE = simple
+${EXE}:${OBJS}
+        ${CC} -o ${EXE} ${OBJS}
+foo.o: foo.c
+        ${CC} -o foo.o -c foo.c
+main.o: main.c
+        ${CC} -o main.o -c main.c
+clean:
+        ${RM} ${EXE} ${OBJS}
+
+```
+
+## 自动变量
+
+```
+.PHONY: clean main
+RM = rm
+CC = gcc
+EXE = simple
+SRCS = ${wildcard *.c}    <!-- wildcard 通配符自动填入.c文件 -->
+OBJS = ${patsubst %.c, %.o, ${SRCS}} <!-- patsubst 将.c 替换为.o -->
+${EXE}:${OBJS}
+    ${CC} -o ${EXE}  &{OBJS}
+main.o: main.c
+    ${CC} -o main.o -c main.c
+foo.o: foo.c
+    ${CC} -o foo.o -c foo.c
+clean:
+    ${RM} ${EXE} ${OBJS}
 ```
