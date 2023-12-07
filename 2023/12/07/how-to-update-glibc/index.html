@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>Archives | Shengshengblog</title>
+        <title>How to Update Glibc | Shengshengblog</title>
         <meta name="author" content="wangsheng">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -118,103 +118,39 @@
                     </div>
                     <div id="main">
                         
-<div id="archives">
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2023/12/7</div>
-            <a href="/2023/12/07/hello-world/">
-                <h3>Hello World</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
+<div class="article">
+    <div>
+        <h1>How to Update Glibc </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/12/7
+        </span>
+        
+        
+    </div>
+    <div class="content" v-pre>
+        <blockquote>
+<p>add under code in sources.list</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deb http://security.debian.org/debian-security buster/updates main</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>and </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A 54404762BBB6E853</span><br><span class="line">sudo apt install libc6-dev /sudo apt install libc6</span><br></pre></td></tr></table></figure>
+<ul>
+<li>OK you get it</li>
+</ul>
+
     </div>
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2023/12/7</div>
-            <a href="/2023/12/07/How-to-update-glibc/">
-                <h3>How to update glibc</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2023/12/7</div>
-            <a href="/2023/12/07/how-to-update-glibc/">
-                <h3>How to update glibc</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2022/6/4</div>
-            <a href="/2022/06/04/Makefile/">
-                <h3>Makefile</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2022/6/4</div>
-            <a href="/2022/06/04/go/">
-                <h3>go</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2022/6/4</div>
-            <a href="/2022/06/04/hexo/">
-                <h3>hexo</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
-        </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2022/6/4</div>
-            <a href="/2022/06/04/skynet/">
-                <h3>skynet</h3>
-            </a>
-            <div class="info">
-                
-                
-            </div>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
         </div>
     </div>
     
@@ -246,6 +182,23 @@
         <script src="/js/particlex.js"></script>
         <script src="/js/showimg.js"></script>
         
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "", clientSecret = "";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "",
+        owner: "",
+        admin: [""],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: true
+    })
+    gitalk.render("gitalk-container")
+</script>
+
 
     </body>
 </html>
