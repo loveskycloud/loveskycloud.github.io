@@ -1,7 +1,7 @@
 ---
 title: How to update glibc
 date: 2023-12-07 23:08:05
-tags:
+tags: glibc
 ---
 
 > add under code in sources.list
