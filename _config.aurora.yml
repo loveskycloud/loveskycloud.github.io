@@ -56,7 +56,12 @@ menu:
   Tags: true
   Archives: true
   Friends: false
-
+  pages-menu:
+    name: 'Message Board'
+    path: '/page/message-board'
+    i18n:
+      cn: 留言板
+      en: Message board
 #! ---------------------------------------------------------------
 #! Theme Config
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
